@@ -1,0 +1,23 @@
+api_admin:
+    resource: "@ApplicationSiteAdminBundle/Resources/config/routing.yml"
+    prefix:   /
+
+api_user:
+    resource: "@SonataUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:   /api/doc
+
+#sonata_api_user:
+#    type:         rest
+#    prefix:       /api/user
+#    resource:     "@SonataUserBundle/Resources/config/routing/api.xml"
+
+api_login_check:
+    path: /api/login_check
+
+#route_name:
+#  pattern: /route
+#  defaults: { _controller: Bundle:Controller:Method, _format:json }

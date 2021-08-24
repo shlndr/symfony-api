@@ -1,0 +1,4 @@
+application_site_admin:
+    resource: "@ApplicationSiteAdminBundle/Controller/"
+    type:     annotation
+    prefix:   /

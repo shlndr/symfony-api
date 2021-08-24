@@ -1,0 +1,30 @@
+[06-Oct-2017 08:59:54 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'jump_api'@'localhost' (using password: YES) in /home/bitrate9875321/public_html/banarasicraft.com/jump/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /home/bitrate9875321/public_html/banarasicraft.com/jump/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=127....', 'jump_api', 'jump_api@1234', Array)
+#1 /home/bitrate9875321/public_html/banarasicraft.com/jump/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(44): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=127....', 'jump_api', 'jump_api@1234', Array)
+#2 /home/bitrate9875321/public_html/banarasicraft.com/jump/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'jump_api', 'jump_api@1234', Array)
+#3 /home/bitrate9875321/public_html/banarasicraft.com/jump/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctr in /home/bitrate9875321/public_html/banarasicraft.com/jump/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 103
+[06-Oct-2017 09:00:05 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'jump_api'@'localhost' (using password: YES) in /home/bitrate9875321/public_html/banarasicraft.com/jump/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /home/bitrate9875321/public_html/banarasicraft.com/jump/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=127....', 'jump_api', 'jump_api@1234', Array)
+#1 /home/bitrate9875321/public_html/banarasicraft.com/jump/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(44): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=127....', 'jump_api', 'jump_api@1234', Array)
+#2 /home/bitrate9875321/public_html/banarasicraft.com/jump/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'jump_api', 'jump_api@1234', Array)
+#3 /home/bitrate9875321/public_html/banarasicraft.com/jump/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctr in /home/bitrate9875321/public_html/banarasicraft.com/jump/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 103
+[06-Oct-2017 09:00:50 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'jump_api'@'localhost' (using password: YES) in /home/bitrate9875321/public_html/banarasicraft.com/jump/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /home/bitrate9875321/public_html/banarasicraft.com/jump/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=127....', 'jump_api', 'jump_api@1234', Array)
+#1 /home/bitrate9875321/public_html/banarasicraft.com/jump/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(44): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=127....', 'jump_api', 'jump_api@1234', Array)
+#2 /home/bitrate9875321/public_html/banarasicraft.com/jump/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'jump_api', 'jump_api@1234', Array)
+#3 /home/bitrate9875321/public_html/banarasicraft.com/jump/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctr in /home/bitrate9875321/public_html/banarasicraft.com/jump/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 103
+[06-Oct-2017 09:02:31 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'jump_api'@'localhost' (using password: YES) in /home/bitrate9875321/public_html/banarasicraft.com/jump/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /home/bitrate9875321/public_html/banarasicraft.com/jump/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=127....', 'jump_api', 'jump_api@1234', Array)
+#1 /home/bitrate9875321/public_html/banarasicraft.com/jump/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(44): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=127....', 'jump_api', 'jump_api@1234', Array)
+#2 /home/bitrate9875321/public_html/banarasicraft.com/jump/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'jump_api', 'jump_api@1234', Array)
+#3 /home/bitrate9875321/public_html/banarasicraft.com/jump/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctr in /home/bitrate9875321/public_html/banarasicraft.com/jump/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 103
+[06-Oct-2017 09:04:34 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'jump_api'@'localhost' (using password: YES) in /home/bitrate9875321/public_html/banarasicraft.com/jump/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php:43
+Stack trace:
+#0 /home/bitrate9875321/public_html/banarasicraft.com/jump/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOConnection.php(43): PDO->__construct('mysql:host=127....', 'jump_api', 'jump_api@1234', Array)
+#1 /home/bitrate9875321/public_html/banarasicraft.com/jump/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/PDOMySql/Driver.php(44): Doctrine\DBAL\Driver\PDOConnection->__construct('mysql:host=127....', 'jump_api', 'jump_api@1234', Array)
+#2 /home/bitrate9875321/public_html/banarasicraft.com/jump/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(360): Doctrine\DBAL\Driver\PDOMySql\Driver->connect(Array, 'jump_api', 'jump_api@1234', Array)
+#3 /home/bitrate9875321/public_html/banarasicraft.com/jump/vendor/doctrine/dbal/lib/Doctrine/DBAL/Connection.php(429): Doctr in /home/bitrate9875321/public_html/banarasicraft.com/jump/vendor/doctrine/dbal/lib/Doctrine/DBAL/Driver/AbstractMySQLDriver.php on line 103

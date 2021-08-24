@@ -1,0 +1,5 @@
+{% extends 'SonataAdminBundle:CRUD:base_show_field.html.twig' %}
+
+{% block field %}
+    <img src={{ asset(object.profilePic ? 'images/' ~ object.profilePic : '/images/default.png') }} />
+{% endblock %}

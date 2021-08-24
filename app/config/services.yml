@@ -1,0 +1,30 @@
+# Learn more about services, parameters and containers at
+# http://symfony.com/doc/current/book/service_container.html
+parameters:
+#    parameter_name: value
+
+services:
+#    service_name:
+#        class: AppBundle\Directory\ClassName
+#        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+
+    app.notify:
+            class: Application\Sonata\UserBundle\Services\NotifyService
+#
+#    admin.vendor:
+#            class: Application\Site\AdminBundle\Admin\CategoryAdmin
+#            arguments: [~, Application\Site\AdminBundle\Entity\Category, ~]
+#            tags:
+#                - { name: sonata.admin, manager_type: orm, group: cms, label: Categories }
+#
+#    admin.state:
+#                class: Application\Site\AdminBundle\Admin\StateAdmin
+#                arguments: [~, Application\Site\AdminBundle\Entity\State, ~]
+#                tags:
+#                    - { name: sonata.admin, manager_type: orm, group: cms, label: States }
+
+    sonata.user.admin.user:
+            class: Application\Sonata\UserBundle\Admin\UserAdmin
+            arguments: [~, Application\Sonata\UserBundle\Entity\User, ~]
+            tags:
+                - { name: sonata.admin, manager_type: orm, group: users, label: Users }

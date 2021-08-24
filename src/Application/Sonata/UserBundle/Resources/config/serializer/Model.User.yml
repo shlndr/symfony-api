@@ -1,0 +1,10 @@
+FOS\UserBundle\Model\User:
+    exclusion_policy: all
+    properties:
+        username:
+            expose: true
+        email:
+            expose: true
+        enabled:
+            expose: true
+#            groups: [notification]

@@ -1,0 +1,114 @@
+fos_user:
+    db_driver:      orm
+    firewall_name:  admin
+    user_class:     Application\Sonata\UserBundle\Entity\User
+
+    group:
+        group_class:   Application\Sonata\UserBundle\Entity\Group
+        group_manager: sonata.user.orm.group_manager  # If you're using doctrine orm (use sonata.user.mongodb.group_manager for mongodb)
+
+    service:
+        user_manager: sonata.user.orm.user_manager    # If you're using doctrine orm (use sonata.user.mongodb.user_manager for mongodb)
+
+sonata_block:
+    default_contexts: [cms]
+    blocks:
+        sonata.admin.block.admin_list:
+            contexts:   [admin]
+        sonata.user.block.menu:    # used to display the menu in profile pages
+        sonata.user.block.account: # used to display menu option (login option)
+        sonata.block.service.text: # used to if you plan to use Sonata user routes
+
+sonata_user:
+    security_acl: false
+    manager_type: orm # can be orm or mongodb
+    table:
+        user_group: "user_group_mapping"
+
+    class:                  # Entity Classes
+        user:               Application\Sonata\UserBundle\Entity\User
+        group:              Application\Sonata\UserBundle\Entity\Group
+
+    admin:                  # Admin Classes
+        user:
+            class:          Sonata\UserBundle\Admin\Entity\UserAdmin
+            controller:     SonataAdminBundle:CRUD
+            translation:    SonataUserBundle
+
+        group:
+            class:          Sonata\UserBundle\Admin\Entity\GroupAdmin
+            controller:     SonataAdminBundle:CRUD
+            translation:    SonataUserBundle
+
+sonata_admin:
+    security:
+        handler: sonata.admin.security.handler.role
+
+    title: Site CMS
+    #title_logo: /images/logo.png
+
+    templates:
+        layout:     ::admin_layout.html.twig
+
+    dashboard:
+        blocks:
+          -
+            position: left
+            type: sonata.admin.block.admin_list
+            settings:
+                groups: [users]
+          -
+            position: right
+            type: sonata.admin.block.admin_list
+            settings:
+                groups: [cms]
+        groups:
+            prop:
+              label: Props Management
+              icon:  "<i class='fa fa-gg'></i>/"
+              items: ~
+            users:
+              label: Administration
+              icon:  "<i class='fa fa-cogs'></i>"
+              items: ~
+            cms:
+              label: Content Management
+              icon:  "<i class='fa fa-th'></i>"
+              items: ~
+
+fos_rest:
+   param_fetcher_listener: true
+   body_listener:          true
+   # format_listener:
+   #     rules:
+   #         - { path: ^/api/, priorities: [ json ], fallback_format: json, prefer_extension: true }
+   view:
+       empty_content: 204
+       view_response_listener: 'force'
+       formats:
+           json: true
+           xml: false
+       templating_formats:
+           html: false
+       mime_types:
+           json: ['application/json']
+   body_converter:
+       enabled: true
+       validate: true
+   routing_loader:
+       default_format: json
+       include_format: false
+   exception:
+       codes:
+           'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' : 404
+       messages:
+           'Symfony\Component\HttpKernel\Exception\NotFoundHttpException' : true
+           'Symfony\Component\HttpKernel\Exception\HttpException' : true
+
+sensio_framework_extra:
+    view:    { annotations: true }
+    router:  { annotations: true }
+    request: { converters: true }
+
+twig:
+    exception_controller: 'FOS\RestBundle\Controller\ExceptionController::showAction'
